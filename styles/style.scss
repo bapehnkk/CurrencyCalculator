@@ -1,0 +1,76 @@
+@import "_zeroing";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+* {
+    font-family: 'Merriweather', serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCF7F8;
+    color: #5B616A;
+}
+
+.row {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    background: #ced3dc;
+    margin: 0;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background: #275DAD;
+    }
+    &:active {
+        transform: scale(.99);
+    }
+}
+
+.amount,
+select,
+.curResult {
+    font-size: 2em;
+    background-color: #ced3dc;
+    padding: .3em;
+    height: 3em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+.amount,
+.curResult {
+    width: 75%;
+    margin-right: .3em;
+    margin-bottom: .3em;
+    border-bottom: .15em solid #5B616A;
+    color: #5B616A;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background: #5B616A;
+        color: #FCF7F8;
+    }
+}
+
+select {
+    width: 20%;
+    min-width: max-content;
+    margin-bottom: .3em;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background: #5B616A;
+        color: #FCF7F8;
+    }
+}
